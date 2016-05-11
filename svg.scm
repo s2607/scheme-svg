@@ -1,3 +1,4 @@
+;;((new-graph black 2 "a.svg") r a b) ;; r returns an x,y pair for t	
 (define (write-svg port graphics)
   (write-string "<?xml version=\"1.0\"?> <svg xmlns=\"http://www.w3.org/2000/svg\">" port) (graphics port) (write-string "</svg>" port))
 (define (write-line x1 y1 x2 y2 color width port)
